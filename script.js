@@ -1,4 +1,9 @@
 
+// Scores
+
+let humanScore = 0;
+let computerScore =0;
+
 
 // Get Computer Choice
 
@@ -31,3 +36,6 @@ return prompt("Choose rock, paper, or scissors:")
 }
 
 console.log(getHumanChoice());
+
+
+
