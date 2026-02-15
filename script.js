@@ -78,5 +78,34 @@ console.log("computer", computerScore);
 
 
 
+// Play 5 Times
 
 
+function playGame() {
+
+  humanScore = 0;
+  computerScore = 0;
+
+  for (let i = 0; i < 5; i++) {
+
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+
+    playRound(humanSelection, computerSelection);
+  }
+
+  console.log("Final Score:");
+  console.log("Human:", humanScore);
+  console.log("Computer:", computerScore);
+
+  if (humanScore > computerScore) {
+    console.log("You win the game!");
+  } else if (computerScore > humanScore) {
+    console.log("Computer wins the game!");
+  } else {
+    console.log("It's a tie game!");
+  }
+}
+
+
+playGame()
